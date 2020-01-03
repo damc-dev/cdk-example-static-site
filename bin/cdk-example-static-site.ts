@@ -12,6 +12,6 @@ const env = {
 const app = new cdk.App();
 const staticSiteStack = new CdkStaticSiteStack(app, 'CdkStaticSiteStack', { env: env });
 new CdkStaticSitePipelineStack(app, 'CdkStaticSitePipelineStack', { 
-    env: env
+    env: env,
     stackName: staticSiteStack.stackName
 });
