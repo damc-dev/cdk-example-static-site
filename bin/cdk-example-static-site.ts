@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 import 'source-map-support/register';
 import cdk = require('@aws-cdk/core');
-import { CdkExampleStaticSiteStack } from '../lib/cdk-example-static-site-stack';
+import { CdkStaticSiteStack } from '../lib/static-site-stack';
+import { CdkStaticSitePipelineStack } from '../lib/pipeline-stack';
 
 const env = {
     region: 'us-east-1',
@@ -9,4 +10,5 @@ const env = {
 }
 
 const app = new cdk.App();
-new CdkExampleStaticSiteStack(app, 'CdkExampleStaticSiteStack', { env: env });
+new CdkStaticSiteStack(app, 'CdkExampleStaticSiteStack', { env: env });
+new CdkStaticSitePipelineStack(app, 'CdkStaticSitePipelineStack', { env: env });
