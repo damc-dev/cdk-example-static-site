@@ -1,4 +1,8 @@
 {
   "@aws-cdk/core:enableStackNameDuplicates": "true",
-  "aws-cdk:enableDiffNoFail": "true"
+  "aws-cdk:enableDiffNoFail": "true",
+  "hosted-zone:account=342431730723:domainName=damc-dev.com:region=us-east-1": {
+    "Id": "/hostedzone/Z3KTXQBSHWYJV1",
+    "Name": "damc-dev.com."
+  }
 }
